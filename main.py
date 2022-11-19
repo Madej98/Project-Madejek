@@ -24,7 +24,7 @@ async def home():
     #                         "click here<a></h2>", media_type="text/html")
     return Response(content="<h2>Hello! To see endpoints "
                                 "<a href=\"https://project-madejek.herokuapp.com/docs\">"
-                                "click here<a></h2>", media_type="text/html")<h2>Witaj, lista dostępnych endpointów jest tutaj: "
+                                "click here<a></h2>", media_type="text/html")
 
 @app.get("/prime/{number}")
 async def prime(number: int):
