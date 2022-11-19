@@ -19,13 +19,12 @@ templates = Jinja2Templates(directory= BASE_DIR/"templates")
 
 @app.get("/")
 async def home():
+    # return Response(content="<h2>Hello! To see endpoints "
+    #                         "<a href=\"http://localhost:8000/docs\">"
+    #                         "click here<a></h2>", media_type="text/html")
     return Response(content="<h2>Hello! To see endpoints "
-                            "<a href=\"http://localhost:8000/docs\">"
-                            "click here<a></h2>", media_type="text/html")
-    # return Response(content="<h2>Witaj, lista dostępnych endpointów jest tutaj: "
-    #                         "<a href=\"https://fastapi-project-madejek.herokuapp.com/docs\">"
-    #                         "https://fastapi-project-madejek.herokuapp.com/docs/<a></h2>", media_type="text/html")
-
+                                "<a href=\"https://Project-Madejek.herokuapp.com/docs\">"
+                                "click here<a></h2>", media_type="text/html")<h2>Witaj, lista dostępnych endpointów jest tutaj: "
 
 @app.get("/prime/{number}")
 async def prime(number: int):
