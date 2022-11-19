@@ -23,7 +23,7 @@ async def home():
     #                         "<a href=\"http://localhost:8000/docs\">"
     #                         "click here<a></h2>", media_type="text/html")
     return Response(content="<h2>Hello! To see endpoints "
-                                "<a href=\"https://Project-Madejek.herokuapp.com/docs\">"
+                                "<a href=\"https://project-madejek.herokuapp.com/docs\">"
                                 "click here<a></h2>", media_type="text/html")<h2>Witaj, lista dostępnych endpointów jest tutaj: "
 
 @app.get("/prime/{number}")
