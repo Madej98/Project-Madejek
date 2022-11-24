@@ -5,3 +5,6 @@ python-multipart
 requests
 uvicorn
 Pillow
+pyprimes
+datetime
+starlette.responses
