@@ -10,6 +10,7 @@ from fastapi import FastAPI, File, UploadFile, Response
 from fastapi.security.api_key import APIKeyHeader
 from starlette.responses import RedirectResponse, StreamingResponse
 
+
 BASE_DIR = pathlib.Path(__file__).parent
 
 API_KEY = "aksr134xk23xmkiop"
